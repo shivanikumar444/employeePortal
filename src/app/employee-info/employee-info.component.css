@@ -1,0 +1,25 @@
+.row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* Aligns items vertically in the center */
+    gap: 16px;           /* Adds space between the two divs */
+}
+  
+.content-box {
+    flex: 1;                /* Optional: Make each div take equal width */
+}
+
+.emp-title {
+    flex: 1; 
+    flex-direction: row;
+    display: flex;
+    align-items: center;  
+}      
+
+button {
+    background-color: #005cbb;
+    color: white;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}

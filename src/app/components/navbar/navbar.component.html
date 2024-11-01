@@ -1,0 +1,162 @@
+<mat-toolbar color="primary" class="navbar">
+
+    <button mat-button><mat-icon>home</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="multiColumnMenu">ESS <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="managerMenu">Manager <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="adminMenu">Admin <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="hrMenu">HR <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="accountManagerMenu">Account Manager <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="organizationMenu">Organization <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="itAdminMenu">IT Admin <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="dashboards">Dashboards <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="reports">Reports <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+    <button mat-button [matMenuTriggerFor]="indiaPayrollReports">India Payroll Reports <mat-icon class="nav_arrow_down" iconPositionEnd>arrow_drop_down</mat-icon></button>
+
+  
+    <mat-menu #essMenu="matMenu">
+      <button mat-menu-item>My Info</button>
+      <button mat-menu-item>Leave Encashment</button>
+      <button mat-menu-item>My Case</button>
+      <button mat-menu-item>Employee Directory</button>
+      <button mat-menu-item>My Messages</button>
+      <button mat-menu-item>Gmail</button>
+      <button mat-menu-item>Approvals</button>
+      <button mat-menu-item>Group Mailing</button>
+      <button mat-menu-item>Request for Software</button>
+    </mat-menu>
+  
+    <mat-menu #managerMenu="matMenu">
+      <button mat-menu-item>My Timesheet</button>
+      <button mat-menu-item>Claim Expenses</button>
+    </mat-menu>
+  
+    <mat-menu #adminMenu="matMenu">
+      <button mat-menu-item>Admin Item 1</button>
+      <button mat-menu-item>Admin Item 2</button>
+    </mat-menu>
+  
+    <mat-menu #hrMenu="matMenu">
+      <button mat-menu-item>HR Item 1</button>
+      <button mat-menu-item>HR Item 2</button>
+    </mat-menu>
+  
+    <mat-menu #accountManagerMenu="matMenu">
+      <button mat-menu-item>Account Manager Item 1</button>
+      <button mat-menu-item>Account Manager Item 2</button>
+    </mat-menu>
+  
+    <mat-menu #organizationMenu="matMenu">
+      <button mat-menu-item>Organization Item 1</button>
+      <button mat-menu-item>Organization Item 2</button>
+    </mat-menu>
+  
+    <mat-menu #itAdminMenu="matMenu">
+      <button mat-menu-item>IT Admin Item 1</button>
+      <button mat-menu-item>IT Admin Item 2</button>
+    </mat-menu>
+
+    <mat-menu #dashboards="matMenu">
+        <button mat-menu-item>IT Admin Item 1</button>
+        <button mat-menu-item>IT Admin Item 2</button>
+    </mat-menu>
+
+    <mat-menu #reports="matMenu">
+        <button mat-menu-item>IT Admin Item 1</button>
+        <button mat-menu-item>IT Admin Item 2</button>
+    </mat-menu>
+
+      <mat-menu #indiaPayrollReports="matMenu">
+        <button mat-menu-item>IT Admin Item 1</button>
+        <button mat-menu-item>IT Admin Item 2</button>
+    </mat-menu>
+  
+
+    <mat-menu #multiColumnMenu="matMenu" class="multi-column-menu">
+      <div class="menu-columns">
+        <!-- Column 1 -->
+        <div class="menu-column">
+          <button mat-menu-item>My Info</button>
+          <button mat-menu-item>Leave Encashment</button>
+          <button mat-menu-item>My Case</button>
+          <button mat-menu-item>Employee Directory</button>
+          <button mat-menu-item>My Messages</button>
+          <button mat-menu-item>Gmail</button>
+          <button mat-menu-item>Approvals</button>
+          <button mat-menu-item>Group Mailing</button>
+          <button mat-menu-item>Request for Software</button>
+        </div>
+  
+        <!-- Column 2 -->
+        <div class="menu-column">
+          <button mat-menu-item>My Timesheet</button>
+          <button mat-menu-item>Employee CMS</button>
+          <button mat-menu-item>File Storage</button>
+          <button mat-menu-item>Email Signature</button>
+          <button mat-menu-item>Google Calender</button>
+          <button mat-menu-item>Messages Templates</button>
+          <button mat-menu-item>Approve CMS</button>
+          <button mat-menu-item>File Converter</button>
+          <button mat-menu-item>Digital Signs</button>
+        </div>
+  
+        <!-- Column 3 -->
+        <div class="menu-column">
+          <button mat-menu-item>Request Leave</button>
+          <button mat-menu-item>My Payslips</button>
+          <button mat-menu-item>ATS</button>
+          <button mat-menu-item>My Evaluation</button>
+          <button mat-menu-item>Outlook</button>
+          <button mat-menu-item>Sample Forms</button>
+          <button mat-menu-item>Status Report</button>
+          <button mat-menu-item>Task Boards</button>
+          <button mat-menu-item>My Attendance</button>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="menu-column">
+          <button mat-menu-item>Calim Expences</button>
+          <button mat-menu-item>My Documents</button>
+          <button mat-menu-item>Cash Advance</button>
+          <button mat-menu-item>My Programs</button>
+          <button mat-menu-item>Bills</button>
+          <button mat-menu-item>Policies</button>
+          <button mat-menu-item>User Chat</button>
+          <button mat-menu-item>My Asset Request</button>
+          <button mat-menu-item>My Goals</button>
+        </div>
+      </div>
+    </mat-menu>
+  </mat-toolbar>
+  
+
+
+   <!--
+   <mat-toolbar color="primary">
+    <button mat-button [matMenuTriggerFor]="multiColumnMenu">Options</button>
+  
+    <mat-menu #multiColumnMenu="matMenu" class="multi-column-menu">
+      <div class="menu-columns">
+        <div class="menu-column">
+          <button mat-menu-item>My Info</button>
+          <button mat-menu-item>Leave Encashment</button>
+          <button mat-menu-item>Employee Directory</button>
+          <button mat-menu-item>My Messages</button>
+        </div>
+  
+        <div class="menu-column">
+          <button mat-menu-item>My Timesheet</button>
+          <button mat-menu-item>Request Leave</button>
+          <button mat-menu-item>Claim Expenses</button>
+          <button mat-menu-item>My Programs</button>
+        </div>
+  
+        <div class="menu-column">
+          <button mat-menu-item>My Documents</button>
+          <button mat-menu-item>Cash Advance</button>
+          <button mat-menu-item>Bills</button>
+          <button mat-menu-item>User Chat</button>
+        </div>
+      </div>
+    </mat-menu>
+  </mat-toolbar>
+-->

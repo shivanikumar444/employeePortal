@@ -1,0 +1,16 @@
+<div class="card">
+    <p class="title">My Actions</p>
+    <!-- <canvas baseChart width="400" height="400"
+            [attr.data-value]="[15, 1, 0, 1]"
+            [attr.labels-value]="['Tasks', 'Timesheet', 'Evaluation', 'Programs']"
+            chartType="pie">
+    </canvas> -->
+    <div class="chart-container">
+        <canvas baseChart
+                [data]="pieChartData"
+                [type]="pieChartType"
+                [options]="pieChartOptions">
+        </canvas>
+      </div> 
+  </div>
+  

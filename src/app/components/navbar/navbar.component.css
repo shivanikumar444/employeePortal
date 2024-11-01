@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  background: #005cbb;
+  button {
+    color: #e0e0ff;
+  }
+  .nav_arrow_down {
+    margin-left: 0;
+  }
+}
+
+.menu-columns {
+  display: flex; /* Display as flex */
+  flex-wrap: wrap; /* Allow wrapping */
+  width: max-content; /* Full width of the menu */
+  padding: 8px; /* Optional padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  overflow: hidden !important;
+  background-color: #005cbb;
+
+}
+
+.menu-column {
+  flex: 1 1 1 20%; /* Allow column growth and shrink */
+  min-width: 150px; /* Set a minimum width for each column */
+  margin-right: 16px; /* Spacing between columns */
+  box-sizing: border-box; /* Include padding and border in width */
+  button {
+    color: #e0e0ff;
+  }
+}
+
+
+/* Remove margin from the last column */
+.menu-column:last-child {
+  margin-right: 0; 
+}
+
+.multi-column-menu {
+  max-width: 600px; /* Set a max width to prevent overflow */
+  width: auto; /* Allow dynamic sizing */
+  overflow: hidden; /* Prevent scroll */
+  background-color: #005cbb;
+}
+
+.mat-menu-panel {
+  overflow: hidden !important; /* Prevent scroll */
+  min-width: 300px; /* Set a minimum width */
+}
+
+@media (max-width: 600px) {
+  .menu-column {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    margin-right: 0; /* No margin on small screens */
+  }
+}
+
+/* 
+
+  .menu-columns {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+  }
+
+  .menu-column {
+    flex: 1; 
+    min-width: 120px; 
+    margin-right: 16px; 
+  }
+  
+  .menu-column:last-child {
+    margin-right: 0; 
+  }
+   .multi-column-menu {
+    min-width: 400px; 
+    padding: 0; 
+  }
+    
+   */
+  

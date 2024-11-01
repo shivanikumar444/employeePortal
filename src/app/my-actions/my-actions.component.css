@@ -1,0 +1,62 @@
+.chart-container {
+    display: flex; /* Use flexbox to align items */
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  canvas {
+    max-width: 250px; /* Set a maximum width for the canvas */
+    height: auto; /* Allow the height to adjust automatically */
+    margin-right: 20px; /* Add margin to the right of the canvas */
+  }
+  
+  /* Legend styles */
+  .legend-wrapper {
+    display: flex; 
+    flex-direction: column; /* Stack legend items vertically */
+    align-items: flex-start; /* Align legend items to the left */
+    max-width: 200px; /* Increase maximum width of the legend */
+    overflow: visible; /* Allow overflow to be visible */
+    white-space: normal; /* Allow text to wrap instead of ellipsis */
+  }
+  
+  /* Optional: Style the individual legend items */
+  .chartjs-legend {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .chartjs-legend li {
+    display: flex; /* Allow items to use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    min-width: 250px; /* Set a minimum width for legend items */
+  }
+
+    /* Custom legend container */
+.custom-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  /* Each legend item */
+  .custom-legend .legend-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    background-color: #f1f1f1; /* Light background color */
+    border-radius: 5px; /* Rounded corners */
+    color: #333; /* Text color */
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  /* Color box beside each label */
+  .custom-legend .legend-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 3px;
+  }

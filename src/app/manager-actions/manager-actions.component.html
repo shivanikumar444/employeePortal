@@ -1,0 +1,34 @@
+<div class="card">
+    <p class="title">Manager Actions</p>
+    <!-- <canvas baseChart
+            [attr.data-value]="[6, 0, 0, 0]"
+            [attr.labels-value]="['Leaves', 'Timesheet', 'Evaluation', 'Expenses']"
+            chartType="pie">
+    </canvas> -->
+    <div class="chart-container">
+        <canvas baseChart
+                [data]="pieChartData"
+                [type]="pieChartType"
+                [options]="pieChartOptions">
+        </canvas>
+      </div>      
+
+      <!-- Custom Legend -->
+      <!-- <div class="custom-legend">
+        <div *ngFor="let label of pieChartData.labels; let i = index" class="legend-item">
+          <span class="legend-box" 
+                [ngStyle]="{
+                  'background-color': 
+                  pieChartData.datasets && pieChartData.datasets[0] && pieChartData.datasets[0].backgroundColor ? 
+                  pieChartData.datasets[0].backgroundColor[i] : 'transparent'
+                }"></span>
+          <span class="legend-text">{{ label }}: 
+            {{
+              pieChartData.datasets && pieChartData.datasets[0] && pieChartData.datasets[0].data ? 
+              pieChartData.datasets[0].data[i] : 0 
+            }}
+          </span>
+        </div>
+      </div> -->
+</div>
+  
